@@ -1,3 +1,4 @@
+.DS_Store
 # Logs
 logs
 *.log
@@ -122,7 +123,6 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode
 .vscode-test
-.DS_Store
 
 # yarn v2
 .yarn/cache
