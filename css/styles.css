@@ -3,24 +3,69 @@
   | Base styles
   |============================
 */
-body {
-  font-family: sans-serif;
-  color: #111111;
-}
-/* reset styles */
-
-/**
-  |============================
-  | Header styles
-  |============================
-*/
-
 :root {
-  --brand-color: ;
+  /* Fonts */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  /* Colors */
+  --main-cl: #2e2f42;
+  --primary-cl: rgba(46, 47, 66, 1);
+  --accent-cl: #e7e9fc;
+  --light-cl: #f4f4fd;
+  --light-cl: rgba(244, 244, 253, 1);
+  --secondary-cl: rgba(77, 90, 229, 1);
+  --dark-cl: #434455;
+
+  --main-bg-cl: #fff;
+  --light-bg-cl: rgba(17, 17, 17, 0.6);
+  --dark-bg-cl: #2e2f42;
+  --beige-bg-cl: #fcf1e0;
 }
 
-.btn {
+body {
+  font-family: var(--main-font);
+  color: var(--main-cl);
+  background-color: var(--main-bg-cl);
+}
+
+p {
+  color: var(--dark-cl);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* NO font size normal! */
+.btns {
   font-family: inherit;
-  color: currentColor;
+  color: var(--secondary-cl);
+  text-align: center;
   cursor: pointer;
+}
+
+.header-logo,
+.footer-logo {
+  color: var(--main-cl);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-logo,
+.footer-text {
+  color: var(--light-cl);
+}
+
+.logo-accent {
+  color: var(--secondary-cl);
+}
+
+.footer-bgd {
+  background: var(--dark-bg-cl);
 }
