@@ -23,7 +23,7 @@
   --beige-bg-cl: #fcf1e0;
   --pressed-bg-cl: #404BBF;
   /* Other */
-  --header-fwb: 700;
+  --header-fw: 700;
   --medium-fw: 500;
   --body-fs: 16px;
   --header-fs: 20px;
@@ -60,23 +60,24 @@ p {
   color: var(--secondary-cl);
 }
 
+.list {
+  list-style: none;
+}
+
 .nav-links {
+  color: var(--main-cl);
   font-weight: var(--medium-fw);
 }
 
-.web-tel .list {
+.contacts-link {
   color: var(--dark-cl);
-}
-
-.list {
-  list-style: none;
 }
 
 .hero-title {
   color: var(--white-cl);
   text-align: center;
   font-size: 56px;
-  font-weight: var(--header-fwb);
+  font-weight: var(--header-fw);
   line-height: 1.07;
 }
 
@@ -85,35 +86,39 @@ p {
   font-family: inherit;
   font-weight: var(--medium-fw);
   letter-spacing: var(--header-lt-space);
-  background-color: var(--iris, #4D5AE5);
+  background-color: var(--secondary-cl);
+  cursor: pointer;
 }
 
-.filter-btn {
+.filter-btns-link {
   color: var(--secondary-cl);
   font-family: inherit;
   font-weight: var(--medium-fw);
   letter-spacing: var(--header-lt-space);
+  cursor: pointer;
 }
 
-.header-logo:hover,
-.header-logo:focus,
 .header-nav-link:hover,
 .header-nav-link:focus,
-.web-tel-link:hover,
-.web-tel-link:focus {
-  color: var(--accent-cl);
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--pressed-bg-cl);
 }
 
 .hero-btn-link:hover,
-.hero-btn-link:focus,
+.hero-btn-link:focus {
+  background-color: var(--pressed-bg-cl);
+}
+
 .filter-btns-link:hover,
 .filter-btns-link:focus {
+  color: var(--white-cl);
   background-color: var(--pressed-bg-cl);
 }
 
 .ws-main-headers {
   font-size: 36px;
-  font-weight: var(--header-fwb);
+  font-weight: var(--header-fw);
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
