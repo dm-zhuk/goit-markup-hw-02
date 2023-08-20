@@ -1,8 +1,9 @@
-/**
-  |============================
-  | Base styles
-  |============================
-*/
+/* Default styles */
+/* font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.2; */
 :root {
   /* Fonts */
   --main-font: Roboto, sans-serif;
@@ -11,44 +12,42 @@
   --main-cl: #2e2f42;
   --primary-cl: rgba(46, 47, 66, 1);
   --accent-cl: #e7e9fc;
-  --light-cl: #f4f4fd;
+  --white-cl: #fff;
   --light-cl: rgba(244, 244, 253, 1);
   --secondary-cl: rgba(77, 90, 229, 1);
   --dark-cl: #434455;
-
+  /* BackgroundColors */
   --main-bg-cl: #fff;
   --light-bg-cl: rgba(17, 17, 17, 0.6);
   --dark-bg-cl: #2e2f42;
   --beige-bg-cl: #fcf1e0;
+  --pressed-bg-cl: #404BBF;
+  /* Other */
+  --header-fwb: 700;
+  --medium-fw: 500;
+  --body-fs: 16px;
+  --header-fs: 20px;
+  --main-lh: 1.5;
+  --main-lt-space: 0.02em;
+  --header-lt-space: 0.04em;
 }
 
 body {
   font-family: var(--main-font);
+  font-size: var(--body-fs);
   color: var(--main-cl);
   background-color: var(--main-bg-cl);
+  line-height: var(--main-lh);
+  letter-spacing: var(--main-lt-space);
 }
 
 p {
   color: var(--dark-cl);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.link {
-  text-decoration: none;
-}
-
-/* NO font size normal! */
-.btns {
-  font-family: inherit;
-  color: var(--secondary-cl);
-  text-align: center;
-  cursor: pointer;
+  font-size: var(--body-fs);
 }
 
 .header-logo,
 .footer-logo {
-  color: var(--main-cl);
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 800;
@@ -57,15 +56,90 @@ p {
   text-transform: uppercase;
 }
 
+.logo-accent {
+  color: var(--secondary-cl);
+}
+
+.nav-links {
+  font-weight: var(--medium-fw);
+}
+
+.web-tel .list {
+  color: var(--dark-cl);
+}
+
+.list {
+  list-style: none;
+}
+
+.hero-title {
+  color: var(--white-cl);
+  text-align: center;
+  font-size: 56px;
+  font-weight: var(--header-fwb);
+  line-height: 1.07;
+}
+
+.hero-btn {
+  color: var(--white-cl);
+  font-family: inherit;
+  font-weight: var(--medium-fw);
+  letter-spacing: var(--header-lt-space);
+  background-color: var(--iris, #4D5AE5);
+}
+
+.filter-btn {
+  color: var(--secondary-cl);
+  font-family: inherit;
+  font-weight: var(--medium-fw);
+  letter-spacing: var(--header-lt-space);
+}
+
+.header-logo:hover,
+.header-logo:focus,
+.header-nav-link:hover,
+.header-nav-link:focus,
+.web-tel-link:hover,
+.web-tel-link:focus {
+  color: var(--accent-cl);
+}
+
+.hero-btn-link:hover,
+.hero-btn-link:focus,
+.filter-btns-link:hover,
+.filter-btns-link:focus {
+  background-color: var(--pressed-bg-cl);
+}
+
+.ws-main-headers {
+  font-size: 36px;
+  font-weight: var(--header-fwb);
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.features,
+.teamcards {
+  font-size: var(--header-fs);
+  font-weight: var(--medium-fw);
+  line-height: var(--header-lh);
+}
+
+.teamcards {
+  background-color: var(--light-cl)
+}
+
+.card-content {
+  background-color: var(--main-bg-cl);
+}
+
 .footer-logo,
 .footer-text {
   color: var(--light-cl);
 }
 
-.logo-accent {
-  color: var(--secondary-cl);
-}
-
+.hero,
 .footer-bgd {
-  background: var(--dark-bg-cl);
+  background-color: var(--dark-bg-cl);
 }
