@@ -1,1 +1,1 @@
-# Tutorial
+# Master of Science in Software Engineering
