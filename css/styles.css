@@ -26,6 +26,7 @@
   --medium-fw: 500;
   --body-fs: 16px;
   --header-fs: 20px;
+  --default-lh: 1.2;
   --main-lh: 1.5;
   --main-lt-space: 0.02em;
   --header-lt-space: 0.04em;
@@ -57,9 +58,7 @@ body {
 
 .header-logo,
 .footer-logo,
-.header-nav-studio,
-.header-nav-portfolio,
-.header-nav-contacts,
+.nav-item,
 .contacts-link,
 .project-cards-link {
   text-decoration: none;
@@ -69,16 +68,17 @@ body {
   list-style: none;
 }
 
-.header-nav-studio,
-.header-nav-portfolio,
-.header-nav-contacts {
+.nav-item {
   color: var(--main-cl);
   font-weight: var(--medium-fw);
 }
 
+.contacts {
+  font-style: normal;
+}
+
 .contacts-link {
   color: var(--dark-cl);
-  font-style: normal;
 }
 
 .hero-title {
@@ -106,6 +106,7 @@ body {
   font-size: var(--header-fs);
   font-weight: var(--medium-fw);
   letter-spacing: var(--main-lt-space);
+  line-height: var(--default-lh);
 }
 
 p,
@@ -124,12 +125,12 @@ p,
   cursor: pointer;
 }
 
-.header-nav-studio:hover,
-.header-nav-studio:focus,
-.header-nav-portfolio:hover,
-.header-nav-portfolio:focus,
-.header-nav-contacts:hover,
-.header-nav-contacts:focus,
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:hover,
+.nav-item:focus,
 .header-nav-link:hover,
 .header-nav-link:focus,
 .contacts-link:hover,
