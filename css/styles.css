@@ -17,15 +17,12 @@
   --dark-cl: #434455;
   /* BackgroundColors */
   --main-bg-cl: #FFF;
-  --modal-bg-cl: #2E2F42;
+  --hero-bg-cl: #2E2F42;
   --light-bg-cl: #F4F4FD;
   --beige-bg-cl: #fcf1e0;
   --pressed-bg-cl: #404BBF;
   --success-bg-cl: #31D0AA;
   --subtle-bg-cl: #8E8F99;
-  --overlay-bg-cl: rgba(46, 47, 66, 0.40);
-  --hero-bg-cl: rgba(46, 47, 66, 0.70);
-  --modal-bg-cl: rgba(236, 241, 244, 1);
   /* Other */
   --header-fw: 700;
   --medium-fw: 500;
@@ -191,5 +188,5 @@ body {
 
 .hero,
 .footer-bg {
-  background-color: var(--modal-bg-cl);
+  background-color: var(--hero-bg-cl);
 }
