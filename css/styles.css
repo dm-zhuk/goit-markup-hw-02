@@ -1,5 +1,5 @@
 /* Default styles */
-/* font-size: 16px;
+/*  font-size: 16px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: normal;
@@ -10,21 +10,27 @@
   --secondary-font: Raleway, sans-serif;
   /* Colors */
   --main-cl: #2e2f42;
-  --accent-cl: #e7e9fc;
-  --white-cl: #fff;
+  --accent-cl: #E7E9FC;
+  --white-cl: #FFF;
   --light-cl: #F4F4FD;
-  --secondary-cl: #4D5AE5;
+  --primary-cl: #4D5AE5;
   --dark-cl: #434455;
   /* BackgroundColors */
-  --main-bg-cl: #fff;
+  --main-bg-cl: #FFF;
   --modal-bg-cl: #2E2F42;
   --light-bg-cl: #F4F4FD;
   --beige-bg-cl: #fcf1e0;
   --pressed-bg-cl: #404BBF;
+  --success-bg-cl: #31D0AA;
+  --subtle-bg-cl: #8E8F99;
+  --overlay-bg-cl: rgba(46, 47, 66, 0.40);
+  --hero-bg-cl: rgba(46, 47, 66, 0.70);
+  --modal-bg-cl: rgba(236, 241, 244, 1);
   /* Other */
   --header-fw: 700;
   --medium-fw: 500;
-  --body-fs: 16px;
+  --default-fw: 400;
+  --default-fs: 16px;
   --header-fs: 20px;
   --default-lh: 1.2;
   --main-lh: 1.5;
@@ -34,7 +40,7 @@
 
 body {
   font-family: var(--main-font);
-  font-size: var(--body-fs);
+  font-size: var(--default-fs);
   color: var(--dark-cl);
   background-color: var(--main-bg-cl);
   line-height: var(--main-lh);
@@ -43,7 +49,7 @@ body {
 
 .header-logo,
 .footer-logo {
-  color: var(--secondary-cl);
+  color: var(--primary-cl);
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 800;
@@ -77,10 +83,6 @@ body {
   font-style: normal;
 }
 
-.contacts-link {
-  color: var(--dark-cl);
-}
-
 .hero-title {
   color: var(--white-cl);
   text-align: center;
@@ -93,11 +95,11 @@ body {
 .hero-btn {
   color: var(--white-cl);
   font-family: inherit;
-  font-size: var(--body-fs);
+  font-size: var(--default-fs);
   font-weight: var(--medium-fw);
   line-height: var(--main-lh);
   letter-spacing: var(--header-lt-space);
-  background-color: var(--secondary-cl);
+  background-color: var(--primary-cl);
   cursor: pointer;
 }
 
@@ -109,16 +111,17 @@ body {
   line-height: var(--default-lh);
 }
 
-p,
+.contacts-link,
 .features-text {
   color: var(--dark-cl);
-  font-size: var(--body-fs);
+  font-size: var(--default-fs);
+  font-weight: var(--default-fw);
 }
 
 .filter-btns-link {
-  color: var(--secondary-cl);
+  color: var(--primary-cl);
   font-family: inherit;
-  font-size: var(--body-fs);
+  font-size: var(--default-fs);
   font-weight: var(--medium-fw);
   line-height: var(--main-lh);
   letter-spacing: var(--header-lt-space);
@@ -179,6 +182,11 @@ p,
 .footer-logo-accent,
 .footer-text {
   color: var(--light-cl);
+}
+
+.footer-text {
+  font-size: var(--default-fs);
+  font-weight: var(--default-fw);
 }
 
 .hero,
